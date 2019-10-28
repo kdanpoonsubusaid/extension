@@ -42,6 +42,7 @@ function onNativeMessage(message) {
 function onDisconnected() {
   appendMessage("Failed to connect: " + chrome.runtime.lastError.message);
   port = null;
+  console.log('ondc');
   updateUiState();
 }
 
@@ -55,5 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'click', connect);
   document.getElementById('send-message-button').addEventListener(
       'click', sendNativeMessage);
+      console.log('add');
   updateUiState();
+  
 });
