@@ -48,6 +48,7 @@ function onDisconnected() {
 
 function connect() {
   var data = { type: "FROM_PAGE", text: "Hello from the webpage!" };
+  console.log('connect')
 window.postMessage(data, "*");
 }
 
