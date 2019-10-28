@@ -52,10 +52,10 @@ function connect() {
 // window.postMessage(data, "*");
 
 var editorExtensionId = "knldjmfmopnpolahpmmgbagdohdnhkik";
-chrome.runtime.sendMessage(editorExtensionId, {openUrlInEditor: url},
+chrome.runtime.sendMessage(editorExtensionId, {openUrlInEditor: "https://kdanpoonsubusaid.github.io/extension/"},
   function(response) {
     if (!response.success)
-      handleError(url);
+      handleError("https://kdanpoonsubusaid.github.io/extension/");
   });
 }
 
