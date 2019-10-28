@@ -47,7 +47,7 @@ function onDisconnected() {
 }
 
 function connect() {
-//   var data = { type: "FROM_PAGE", text: "Heldddaalo from thdde webpage!" };
+//   var data = { type: "FROM_PAGE", text: "Hello from thdde webpage!" };
 //   console.log('connect')
 // window.postMessage(data, "*");
 chrome.runtime.sendMessage(editorExtensionId, {openUrlInEditor: url},
