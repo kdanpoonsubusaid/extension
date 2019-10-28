@@ -52,13 +52,9 @@ function connect() {
 // window.postMessage(data, "*");
 
 var editorExtensionId = "knldjmfmopnpolahpmmgbagdohdnhkik";
-chrome.runtime.sendMessage(editorExtensionId, {openUrlInEditor: "https://kdanpoonsubusaid.github.io/extension/"},
-  function(response) {
-    if (!response.success)
-      handleError("https://kdanpoonsubusaid.github.io/extension/");
-  });
-}
+chrome.runtime.sendMessage(editorExtensionId, "message1234cf") 
 
+}
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('connect-button').addEventListener(
       'click', connect);
