@@ -47,6 +47,13 @@ function onDisconnected() {
 }
 
 function connect() {
+
+  port = chrome.runtime.connectNative(hostName);
+  port.onMessage.addListener(onNativeMessage);
+  port.onDisconnect.addListener(onDisconnected);
+  
+  port.postMessage("this is the message being sent");
+  appendMessage("Sent message: <b>" + JSON.stringify(message) + "</b>");
 //   var data = { type: "FROM_PAGE", text: "Hello from thdde webpage!" };
 
 // window.postMessage(data, "*");
