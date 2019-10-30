@@ -53,7 +53,7 @@ function connect() {
 
 var editorExtensionId = "knldjmfmopnpolahpmmgbagdohdnhkik";
 console.log('connect');
-chrome.runtime.sendMessage(editorExtensionId, "message1234cf") 
+chrome.runtime.sendMessage(editorExtensionId, {"text": "message1234cf"}) 
 console.log('message sent');
 }
 document.addEventListener('DOMContentLoaded', function () {
