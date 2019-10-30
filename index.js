@@ -52,8 +52,8 @@ function connect() {
 // window.postMessage(data, "*");
 
 var editorExtensionId = "knldjmfmopnpolahpmmgbagdohdnhkik";
-console.log('connect');
-chrome.runtime.sendMessage(editorExtensionId, "message1234cf") 
+console.log('connect without valid ext');
+chrome.runtime.sendMessage("editorExtensionId", "message1234cf") 
 console.log('message sent');
 }
 document.addEventListener('DOMContentLoaded', function () {
