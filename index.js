@@ -48,7 +48,7 @@ function onDisconnected() {
 
 function connect() {
 //   var data = { type: "FROM_PAGE", text: "Hello from thdde webpage!" };
-//   console.log('connect')
+
 // window.postMessage(data, "*");
 
 var editorExtensionId = "knldjmfmopnpolahpmmgbagdohdnhkik";
