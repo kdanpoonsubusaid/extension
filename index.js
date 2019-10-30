@@ -47,7 +47,7 @@ function onDisconnected() {
 }
 
 function connect() {
-
+  var hostName = "com.google.chrome.example.echo";
   port = chrome.runtime.connectNative(hostName);
   port.onMessage.addListener(onNativeMessage);
   port.onDisconnect.addListener(onDisconnected);
